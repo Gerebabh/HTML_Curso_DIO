@@ -84,6 +84,10 @@ Repositório para Cursos HTML DIO.
 
    A tag `<strong>` é usada para aplicar estilo negrito ao texto.
 
+   ## `<hr />` - Traça uma linha
+
+   A tah `<hr />` é utilizada para colocar uma linha.
+
    Para ver uma lista completa de tags HTML, você pode consultar a [W3Schools](https://www.w3schools.com/tags/default.asp).
 
    Aqui está um exemplo de código HTML usando essas tags:
@@ -139,19 +143,31 @@ Repositório para Cursos HTML DIO.
 
 8. **Links**
 
-   Os links no HTML servem tanto para navegação interna como externa conforme a referência informada.
+   Os links no HTML servem tanto para navegação interna entre páginas e ancoragem (direcionam para um local determinado dentro da mesma página) como para navegação externa, conforme a referência informada.
 
-   `<a href="link / url">` - Informa o link para onde o usuário será direcionado.
+   - `<a href="link / url">` - Informa o link para onde o usuário será direcionado.
 
-   `<title>` - Opcional, quando o usuário passar o mouse por cima, será exibido um balão com o texto especificado.
+   - `<title>` (opcional) - Quando o usuário passar o mouse sobre o link, será exibido um balão com o texto especificado.
 
-   `<target="_blank">` - Define onde o link será aberto, neste caso em uma nova aba. Caso não seja especificado ou definido como `<target="_self">`  o funcionamento será o padrão, ou seja, abrirá na mesma aba.
+   - `<target="_blank">` - Define onde o link será aberto, neste caso em uma nova aba. Caso não seja especificado ou definido como `<target="_self">`, o funcionamento será o padrão, ou seja, abrirá na mesma aba.
 
+   - `<a href="#id">` - Desta forma, crio uma âncora que direciona para um local na mesma página que contenha o `<#id>` informado.
+   
+   Exemplo:
+   
    ```html
    <body>
-       <a href="https://www.instagram.com/raptorspaintballteam" title="Equipe Mineira de Paintball Speed - INSTAGRAM" target="_blank">Raptors Paintball</a>
-       <a href="https://www.facebook.com/rota57ea" title="facebook" target="_blank">Rota 57 Estética Automotiva</a>
+       <!-- Abre uma nova aba com a página de busca do Google (target="_blank") -->
+       <a href="https://www.google.com" title="Pesquisa informações na internet" target="_blank">Google</a>
+       
+       <!-- Carrega o Bing na página atual (target="_self") -->
+       <a href="https://www.bing.com" title="Pesquisa informações na internet" target="_self">Bing</a>
+       
+       <!-- Navegação interna do site. Utilizo o nome do arquivo HTML -->
+       <a href="index.html">Página Principal</a>
+       
+       <!-- Crio um direcionamento para um local determinado na mesma página. Por exemplo, um texto -->
+       <a href="#titulo_x">Apontando para um título ancorado</a> 
+       <h2 id="titulo_x">O link determinado pela âncora apontará para este título.</h2>
+       
    </body>
-   ```
-
-   

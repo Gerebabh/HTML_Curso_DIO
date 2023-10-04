@@ -1,0 +1,149 @@
+<h2>Introdução prática ao HTML</h2>
+    
+<h3 id="ferramentas">Ferramentas utilizadas</h3>
+<p><img src="https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?style=plastic&logo=Visual%20Studio%20Code&logoColor=white" alt="&lt;Visual Studio Code&gt;"> - Extensões: <code>Live Server (Ritwick Dey)</code> - <code>Emmet (Pré instalado no VSC)</code>.</p>
+<button style="width: 40px; height: 20px; font-size: 10px;" ><a href="index.html#intro">Início</a></button>
+<hr width="300" />
+
+<h3 id="inspetor">Inspetor de elementos</h3>
+<p>O Inspetor de Elementos é uma ferramenta do desenvolvedor e é disponibilizada pelo navegador. Para acessar por exemplo no <img src="https://img.shields.io/badge/googlechrome-4285F4?style=plastic&logo=googlechrome&logoColor=white" alt="&lt;Google Chrome&gt;"> ou no <img src="https://img.shields.io/badge/microsoftedge-0078D7?style=plastic&logo=microsoftedge&logoColor=white" alt="&lt;Microsoft Edge&gt;"> basta pressionar <code>F12</code>.</p>
+<button style="width: 40px; height: 20px; font-size: 10px;" ><a href="index.html#intro">Início</a></button>
+<hr width="300" />
+
+<h3 id="estrutura_base">Estrutura básica do HTML</h3>
+<p>Crie uma pasta e aponte o caminho no VSCode e crie o primeiro arquivo como `index.html`. Por convenção a página inicial do site tem como nome `index.html`. Dentro deste arquivo a estrutura base é:</p>
+<pre>
+  <code>
+    &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;Meu primeiro HTML&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+
+        &lt;/body&gt;
+    &lt;/html&gt;
+  </code>
+</pre>
+<button style="width: 40px; height: 20px; font-size: 10px;" ><a href="index.html#intro">Início</a></button>
+<hr width="300" />
+
+<h3 id="tags">Atributo das tags</h3>
+<p>Os atributos das tags HTML são informações extras que você pode adicionar a uma tag para controlar ou definir suas propriedades. Eles fornecem instruções adicionais sobre como a tag deve funcionar ou aparecer. Por exemplo, em uma tag de imagem &lt;img&gt;, o atributo `src` é usado para especificar a origem da imagem que deve ser exibida na página. Em resumo, os atributos das tags HTML são como configurações ou instruções que você pode ajustar para personalizar o comportamento ou a aparência dos elementos HTML em sua página da web.</p>
+<pre>
+    <code>
+    &lt;!-- Rótulo para o campo "nome" --&gt;
+    &lt;label for="nome"&gt;Informe seu nome:&lt;/label&gt;
+    &lt;!-- Campo de entrada de texto para o nome --&gt;
+    &lt;input type="text" name="nome" /&gt;&lt;br /&gt;
+
+    &lt;!-- Rótulo para o campo "idade" --&gt;
+    &lt;label for="idade"&gt;Informe sua idade:&lt;/label&gt;
+    &lt;!-- Campo de entrada de número para a idade --&gt;
+    &lt;input type="number" name="idade" /&gt;&lt;br /&gt;
+    </code>
+</pre>
+
+<button style="width: 40px; height: 20px; font-size: 10px;" ><a href="index.html#intro">Início</a></button>
+<hr width="300" />
+
+<h3 id="tipografia">Textos - Tipografia HTML</h3>
+<p>Exmplos de tags mais comums:</p>
+
+<h1 style="color:grey">Cabeçalho Principal - &lt;h1&gt;</h1>
+<p>A tag &lt;h1&gt; é usada para criar o cabeçalho principal da página, como o título. Existem vários níveis de cabeçalhos, de &lt;h1&gt; a &lt;h6&gt;.</p>
+
+<h4 style="color:grey">Parágrafo</h4>
+<p>A tag &lt;p&gt; é usada para criar parágrafos em seu texto.</p>
+
+<h4 style="color:grey">Sublinhado</h4>
+<p><u>A tag &lt;u&gt; é usada para adicionar sublinhado ao texto.</u></p>
+
+<h4 style="color:grey">Itálico</h4>
+<p><i>A tag &lt;i&gt; é usada para aplicar estilo itálico ao texto.</i></p>
+
+<h4 style="color:grey">Negrito</h4>
+<p><strong>A tag &lt;strong&gt; é usada para aplicar estilo negrito ao texto.</strong></p>
+
+<h4 style="color:grey">Linha Horizontal</h4>
+<p>A tag &lt;hr&gt; é utilizada para colocar uma linha horizontal. Como apresentado abaixo.</p>
+<hr />
+
+<h4 style="color:grey">Citação</h4>
+<blockquote>
+    <u>Este trecho abaixo é uma citação.</u><br />
+    <i>“Inteligência é a capacidade de se adaptar à mudança.” </i>
+    <strong> — Stephen Hawking</strong>
+</blockquote>
+
+<p>Para ver uma lista completa de tags HTML, você pode consultar a <a href="https://www.w3schools.com/tags/default.asp" target="_blank">W3Schools</a>.</p>
+
+<button style="width: 40px; height: 20px; font-size: 10px;" ><a href="index.html#intro">Início</a></button>
+<hr width="300" />
+
+<h3 id="listas_ol_ul">Listas ordenadas e não ordenadas</h3>
+<p>Listas ordenadas são apresentadas por números sequenciais e as não ordenadas por asteriscos (*).</p>
+<pre>
+    <code>
+        Lista ordenada
+        &lt;ol&gt;
+            &lt;li&gt;Item 1&lt;/li&gt;
+            &lt;li&gt;Item 2&lt;/li&gt;
+            &lt;li&gt;Item 3&lt;/li&gt;
+        &lt;/ol&gt;
+
+        Lista Não ordenada
+        &lt;ul&gt;
+            &lt;li&gt;Item 1&lt;/li&gt;
+            &lt;li&gt;Item 2&lt;/li&gt;
+            &lt;li&gt;Item 3&lt;/li&gt;
+        &lt;/ul&gt;
+    </code>
+</pre>
+Lista ordenada
+<ol>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ol>
+
+Lista Não ordenada
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ul>
+<button style="width: 40px; height: 20px; font-size: 10px;" ><a href="index.html#intro">Início</a></button>
+<hr width="300" />
+
+<h3 id="link">Links</h3>
+<p>Os links no HTML servem tanto para navegação interna entre páginas e ancoragem (direcionam para um local determinado dentro da mesma página) como para navegação externa, conforme a referência informada.</p>
+<ul>
+    <li>&lt;a href="link / url"&gt; - Informa o link para onde o usuário será direcionado.</li>
+    <li>&lt;title&gt; (opcional) - Quando o usuário passar o mouse sobre o link, será exibido um balão com o texto especificado.
+    <li>&lt;target="_blank"&gt; - Define onde o link será aberto, neste caso em uma nova aba. Caso não seja especificado ou definido como &lt;target="_self"&gt;, o funcionamento será o padrão, ou seja, abrirá na mesma aba.</li>
+    <li>&lt;a href="#id"&gt; - Desta forma, crio uma âncora que direciona para um local na mesma página que contenha o &lt;#id&gt; informado.</li>
+</ul>
+Exemplo:
+<pre>
+    <code>
+        &lt;body&gt;
+            &lt;!-- Abre uma nova aba com a página de busca do Google (target="_blank") --&gt;
+            &lt;a href="https://www.google.com" title="Pesquisa informações na internet" target="_blank"&gt;Google&lt;/a&gt;
+            
+            &lt;!-- Carrega o Bing na página atual (target="_self") --&gt;
+            &lt;a href="https://www.bing.com" title="Pesquisa informações na internet" target="_self"&gt;Bing&lt;/a&gt;
+            
+            &lt;!-- Navegação interna do site. Utilizo o nome do arquivo HTML --&gt;
+            &lt;a href="index.html"&gt;Página Principal&lt;/a&gt;
+            
+            &lt;!-- Crio um direcionamento para um local determinado na mesma página. Por exemplo, um texto --&gt;
+            &lt;a href="#titulo_x"&gt;Apontando para um título ancorado&lt;/a&gt; 
+            &lt;h2 id="titulo_x"&gt;O link determinado pela âncora apontará para este título.&lt;/h2&gt;
+        &lt;/body&gt;
+    </code>
+</pre>
+<button style="width: 40px; height: 20px; font-size: 10px;" ><a href="index.html#intro">Início</a></button>
+<hr />
+
+</body>
+</html>

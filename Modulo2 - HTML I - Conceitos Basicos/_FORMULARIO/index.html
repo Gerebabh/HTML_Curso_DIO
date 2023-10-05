@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cadastros</title>
+</head>
+<body>
+    <header style="text-align: center;"><strong>HTML I - Conceitos Básicos</strong></header>
+    <hr />
+    <h4>Formulário - tag &lt;FORM&gt;</h4>
+    <form name="cadastro">
+        Nome: <input type="text" name="nome" /><br /><br />
+        Idade: <input type="number" name="idade" /><br /><br />
+        Senha <input type="password" name="senha" /><br /><br />
+        <button type="submit">Enviar</button>
+    </form>
+    
+    <h4>Entradas - tag &lt;input type=""&gt;</h4>
+<form>
+    <label>Entrada de texto - &lt;input type="text"&gt;</label> - <input type="text"><br /><br />
+    <label>Entrada de Numeros - &lt;input type="number"&gt;</label> - <input type="number" min="0" step="10" max="100"><br /><br />
+    <label>Scroll - &lt;input type="range"&gt;</label> - <input type="range" min="0" max="10" value="1" /><br /><br />
+    <label>Cores - &lt;input type="color"&gt;</label> - <input type="color" /><br /><br />
+    <label>Email - &lt;input type="email"&gt;</label> - <input type="email" /><br /><br />
+    <label>URL - &lt;input type="url"&gt;</label> - <input type="url" /><br /><br />
+    <label>Data - &lt;input type="date"&gt;</label> - <input type="date" /><br /><br />
+    <label>Semana - &lt;input type="week"&gt;</label> - <input type="week" /><br /><br /> <!--Não funciona FireFox-->
+    <label>Mês - &lt;input type="month"&gt;</label> - <input type="month" /><br /><br /> <!--Não funciona FireFox-->
+    <label>Check Box - &lt;input type="checkbox"&gt;</label> - <input type="checkbox" /><input type="checkbox" /><br /><br />
+    <label>Radio Button - &lt;input type="radio"&gt;</label> - <input type="radio" name="teste"/><input type="radio" name="teste" /><br /><br />
+    <label>Ocultar - &lt;input type="hidden"&gt;</label> - <input type="hidden" /><br /><br /> 
+    <label>Arquivo - &lt;input type="file"&gt;</label> - <input type="file" multiple /><br /><br /> 
+    <label>Buscar - &lt;input type="search"&gt;</label> - <input type="search" /><br /><br /> <!--Não funciona FireFox-->
+    <label>Botão método 1 - &lt;input type="submit"&gt;</label> - <input type="submit" value="Enviar" /><br /><br />
+    <label>Botão método 2 - &lt;button&gt;Enviar&lt;/button&gt;</label> - <button type="button">Enviar</button><br /><br />
+</form>
+   
+</body>
+</html>

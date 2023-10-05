@@ -1,173 +1,25 @@
-# HTML - CURSOS DIO ![html5](https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+# Formação HTML Web Developer ![html5](https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 
-Repositório para Cursos HTML DIO.
+Para iniciar em Front-End o HTML (HyperText Markup Language) é a base para criar as primeiras páginas web. Ele permite a criação de websites.
 
-1. **Formação HTML Web Developer** - Curso teórico.
+Mesmo o HTML não sendo considerada uma linguagem de programação no sentido tradicional, por nãoo possui a capacidade de executar lógica ou realizar cálculos. Em vez disso, o HTML é uma linguagem de marcação usada para estruturar e formatar documentos da web, como páginas da web. Ele descreve a estrutura dos elementos em uma página, como cabeçalhos, parágrafos, links e imagens, mas não tem a capacidade de realizar operações complexas ou lógica de programação. HTML é frequentemente usado em conjunto com linguagens de programação, como JavaScript e CSS, para criar páginas web interativas e dinâmicas.
 
-* História da Web
-* O que são Clients
-* O que são Servers
-* Linguagens de programação
+Neste repositório serão adicionados os estudos referentes ao curso **Formação HTML Web Developer** da DIO.
 
-2. **Introdução do HTML na Prática**
+O curso está dividido em três módulos, sendo:
 
-* Ferramentas utilizadas  
-
-![Visual Studio Code](https://img.shields.io/badge/Visual Studio Code-007ACC?style=plastic&logo=Visual Studio Code&logoColor=white) Extensões: `Live Server (Ritwick Dey)` - `Emmet (Pré instalado no VSC)`
-
-3. **Inspetor de elementos**
-
-   O Inspetor de Elementos é uma ferramenta do desenvolvedor e é disponibilizada pelo navegador. Para acessar por exemplo no ![googlechrome](https://img.shields.io/badge/googlechrome-4285F4?style=plastic&logo=googlechrome&logoColor=white) ou no ![microsoftedge](https://img.shields.io/badge/microsoftedge-0078D7?style=plastic&logo=microsoftedge&logoColor=white) basta pressionar `F12`.
-
-4. **Estrutura básica do HTML**
-
-   Crie uma pasta e aponte o caminho no VSCode e crie o primeiro arquivo como `index.html`.
-
-   Por convenção a página inicial do site tem como nome `index.html`. 
-
-   Dentro deste arquivo a estrutura base é:
-
-   ```html
-   <html>
-       <head>
-           <title>Meu primeiro HTML</title> 
-       </head>
-       <body>
-           
-       </body>
-   </html>
-   ```
-
-5. **Atributos das TAGS**
-
-   Os atributos das tags HTML são informações extras que você pode adicionar a uma tag para controlar ou definir suas propriedades. Eles fornecem instruções adicionais sobre como a tag deve funcionar ou aparecer. Por exemplo, em uma tag de imagem `<img>`, o atributo `src` é usado para especificar a origem da imagem que deve ser exibida na página. Em resumo, os atributos das tags HTML são como configurações ou instruções que você pode ajustar para personalizar o comportamento ou a aparência dos elementos HTML em sua página da web.
-
-   ```html
-   <body>
-       <!-- Rótulo para o campo "nome" -->
-       <label for="nome">Informe seu nome:</label>
-       <!-- Campo de entrada de texto para o nome -->
-       <input type="text" name="nome" /><br />
-   
-       <!-- Rótulo para o campo "idade" -->
-       <label for="idade">Informe sua idade:</label>
-       <!-- Campo de entrada de número para a idade -->
-       <input type="number" name="idade" /><br />
-   </body>
-   ```
-
-6. **Textos - Tipografia HTML**
-
-   Neste guia, exploraremos algumas tags HTML relacionadas à tipografia:
-
-   ## `<h1>` - Cabeçalho Principal
-
-   A tag `<h1>` é usada para criar o cabeçalho principal da página, como o título. Existem vários níveis de cabeçalhos, de `<h1>` a `<h6>`.
-
-   ## `<p>` - Parágrafo
-
-   A tag `<p>` é usada para criar parágrafos em seu texto.
-
-   ## `<blockquote>` - Citação
-
-   A tag `<blockquote>` é usada para destacar citações ou observações em seu conteúdo.
-
-   ## `<u>` - Sublinhado
-
-   A tag `<u>` é usada para adicionar sublinhado ao texto.
-
-   ## `<i>` - Itálico
-
-   A tag `<i>` é usada para aplicar estilo itálico ao texto.
-
-   ## `<strong>` - Negrito
-
-   A tag `<strong>` é usada para aplicar estilo negrito ao texto.
-
-   ## `<hr />` - Traça uma linha
-
-   A tah `<hr />` é utilizada para colocar uma linha.
-
-   Para ver uma lista completa de tags HTML, você pode consultar a [W3Schools](https://www.w3schools.com/tags/default.asp).
-
-   Aqui está um exemplo de código HTML usando essas tags:
-
-   ```html
-   <body>
-       <h1>Este é um título</h1>
-       <h2>Este é um sub-título</h2>
-       <p>
-           Este é um parágrafo. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-           exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-       </p>
-       <blockquote>
-           <i>“Inteligência é a capacidade de se adaptar à mudança.”</i>
-           <u>— Stephen Hawking</u>
-       </blockquote>
-   </body>
-
-7. **Listas ordenadas e Não ordenadas**
-
-   Listas ordenadas são apresentadas por números sequenciais e as não ordenadas por asteriscos (*).
-
-   ```html
-   <body>
-          Lista ordenada
-          <ol>
-              <li>Item 1</li>
-              <li>Item 2</li>
-              <li>Item 3</li>
-          </ol>
-   
-          Lista Não ordenada
-          <ul>
-              <li>Item 1</li>
-              <li>Item 2</li>
-              <li>Item 3</li>
-          </ul>
-   </body>
-   ```
-
-   ### Lista Ordenada
-
-   1. Item 1
-   2. Item 2
-   3. Item 3
-
-   ### Lista Não Ordenada
-
-   * Item 1
-   * Item 2
-   * Item 3
-
-8. **Links**
-
-   Os links no HTML servem tanto para navegação interna entre páginas e ancoragem (direcionam para um local determinado dentro da mesma página) como para navegação externa, conforme a referência informada.
-
-   - `<a href="link / url">` - Informa o link para onde o usuário será direcionado.
-
-   - `<title>` (opcional) - Quando o usuário passar o mouse sobre o link, será exibido um balão com o texto especificado.
-
-   - `<target="_blank">` - Define onde o link será aberto, neste caso em uma nova aba. Caso não seja especificado ou definido como `<target="_self">`, o funcionamento será o padrão, ou seja, abrirá na mesma aba.
-
-   - `<a href="#id">` - Desta forma, crio uma âncora que direciona para um local na mesma página que contenha o `<#id>` informado.
-   
-   Exemplo:
-   
-   ```html
-   <body>
-       <!-- Abre uma nova aba com a página de busca do Google (target="_blank") -->
-       <a href="https://www.google.com" title="Pesquisa informações na internet" target="_blank">Google</a>
-       
-       <!-- Carrega o Bing na página atual (target="_self") -->
-       <a href="https://www.bing.com" title="Pesquisa informações na internet" target="_self">Bing</a>
-       
-       <!-- Navegação interna do site. Utilizo o nome do arquivo HTML -->
-       <a href="index.html">Página Principal</a>
-       
-       <!-- Crio um direcionamento para um local determinado na mesma página. Por exemplo, um texto -->
-       <a href="#titulo_x">Apontando para um título ancorado</a> 
-       <h2 id="titulo_x">O link determinado pela âncora apontará para este título.</h2>
-       
-   </body>
+* **Primeiros passos em HTML**
+  * Entendendo a comunicação Client x Server.
+  * Introdução ao HTML na Prática.
+  * Desafio - Criar uma página Web com as tags aprendidas.
+* **HTML I - Conceitos Básicos**
+  * Trabalhando com Formulários.
+  * Estruturando seu HTML + Formatações.
+  * Trabalhando com Mídias utilizando HTML.
+  * Criando Tabelas com HTML.
+  * Desafio - Criando Primeiro Site Completo com HTML.
+* **HTML II - Ampliando o conhecimento**
+  * Entendo o HTML Semântico.
+  * HTML: Recursos Especiais.
+  * Desafio - Recriando o Wikipédia com Layout Moderno.
+  

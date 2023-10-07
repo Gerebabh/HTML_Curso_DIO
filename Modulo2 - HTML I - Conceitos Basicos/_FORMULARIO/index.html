@@ -16,7 +16,10 @@
         <button type="submit">Enviar</button>
     </form>
     
+    <hr />
+
     <h4>Entradas - tag &lt;input type=""&gt;</h4>
+    <p>Estes são alguns exemplos, outros tipos podem ser encontrados em <a href="https://www.w3schools.com/tags/tag_input.asp">w3Schools - Tags.</a></p>
 <form>
     <label>Entrada de texto - &lt;input type="text"&gt;</label> - <input type="text"><br /><br />
     <label>Entrada de Numeros - &lt;input type="number"&gt;</label> - <input type="number" min="0" step="10" max="100"><br /><br />
@@ -35,6 +38,94 @@
     <label>Botão método 1 - &lt;input type="submit"&gt;</label> - <input type="submit" value="Enviar" /><br /><br />
     <label>Botão método 2 - &lt;button&gt;Enviar&lt;/button&gt;</label> - <button type="button">Enviar</button><br /><br />
 </form>
-   
+
+    <hr />
+
+    <h4>Checkbox e Radio</h4>
+    <p>Estes campos são caixas de seleção, porém com uma diferença muito importante entre elas.</p>
+    <p>&lt;input type="checkbox"&gt;: Estes campos são caixas de seleção, porém com uma diferença muito importante entre elas.</p>
+    
+    <form method="get">
+    <p><u><i>Complementos:</i></u></p>
+        <input type="checkbox" name="complemento[]" value="Alface" /><label>Alface</label>
+        <input type="checkbox" name="complemento[]" value="Bacon"/><label>Bacon</label>
+        <input type="checkbox" name="complemento[]" value="Ovo"/><label>Ovo</label>
+        <input type="checkbox" name="complemento[]" value="Queijo"/><label>Queijo</label>
+    
+    <p><u><i>Bebidas:</i></u></p>
+        <input type="radio" name="bebida" value="Suco"/><label>Suco</label>
+        <input type="radio" name="bebida" value="Refrigerante Lata"/><label>Refrigerante lata</label>
+        <input type="radio" name="bebida" value="Cerveja"/><label>Cerveja</label>
+    <br /><br />
+    <button type="submit">Enviar pedido</button>
+    </form>
+    <br />
+    <hr />
+
+    <h4>Button e seus tipos</h4>
+    <p>Utilizando a tag &lt;button&gt;, podemos criar três tipos de botões que se comportam de forma semelhante, mas têm funcionalidades diferentes.</p>
+    <h6>Tipo 1</h6>
+    <p>&lt;button type="button"&gt;Clicável&lt;/button&gt; - Ele é apenas clicável, porém pode ser associado ao uso de JavaScript.</p>
+    <button type="button">Clicável</button> <button type="button" onclick="alert('Cliquei aqui!')">Associado ao JavaScript</button>
+    
+    <h6>Tipo 2</h6>
+    <p>&lt;button type="reset"&gt;Limpar&lt;/button&gt; - Este é o botão do tipo Reset. Ele limpa todos os campos do formulário.<p>
+
+    <form name="teste_reset">
+        Nome: <input type="text" name="nome" /><br /><br />
+        Idade: <input type="number" name="idade" /><br /><br />
+        Senha <input type="password" name="senha" /><br /><br />
+        <button type="reset">Limpar</button>
+    </form>
+    <br />
+    <h6>Tipo 3</h6>
+    <p>&lt;button type="submit"&gt;Enviar&lt;/button&gt; - O botão do tipo Submit é usado para enviar o formulário. Uma observação importante é que o botão `submit` permite que o usuário pressione a tecla ENTER em qualquer momento para enviar o formulário. Portanto, é recomendável usar o evento "onsubmit" do JavaScript para validar os campos obrigatórios.</p>
+
+    <form name="submit">
+        Nome: <input type="text" name="nome" /><br /><br />
+        Idade: <input type="number" name="idade" /><br /><br />
+        Senha <input type="password" name="senha" /><br /><br />
+        <button type="submit">Enviar</button>
+    </form>
+
+    <hr />
+
+    <h4>Select e seus tipos</h4>
+    <p>São campos com respostas predefinidas ao qual o usuário apenas fará a seleção entre as opções apresentadas.</p>
+    <form name="test_select">
+        <label>Nome: </label><input type="text" name="nome" placeholder="Digite seu nome"><br /><br />
+        <label>Curso: </label>
+        <select name="curso" >
+            <option selected value="">Selecione o Curso</option>
+            <option value="ciencia da computacao">Ciência da computação</option>
+            <option value="administracao">Administração</option>
+            <option value="desenvolvimento full stack">Desenvolvimento Full Stack</option>
+        </select><br /><br />
+        
+        <label>Exemplo de marcação "Multipla": </label><br /><br />
+        <select name="curso" multiple>
+            <option selected value="">Selecione o Curso</option>
+            <option value="ciencia da computacao">Ciência da computação</option>
+            <option value="administracao">Administração</option>
+            <option value="desenvolvimento full stack">Desenvolvimento Full Stack</option>
+        </select><br /><br />
+        <small>Segure o Ctrl para selecionar mais de uma opção.</small><br /><br />
+        <label>Instituição de ensino: </label><input type="text" name="nome" placeholder="DIO" disabled><br /><br />
+        <label>Conclusão: </label><input type="date" /><br /><br />
+        <button type="submit">Enviar</button>
+    </form>
+    <hr />
+
+    <h4>Textarea - Área de texto</h4>
+    <p>O Textarea diferente do &lt;input type="text"&gt; que apresenta um campo para inserção em linha o Textarea é presentado como uma caixa para inserção de várias linhas. Por exemplo, o usuário pode escrever um email.</p>
+    <form>
+        <label for="message">Mensagem:</label><br />
+        <textarea id="message" name="message" rows="5" cols="30" placeholder="Digite sua mensagem aqui..."></textarea><br /><br />
+        <button type="submit">Enviar</button>
+    </form>
+    
+    <hr />
+    <br /><br />
+
 </body>
 </html>

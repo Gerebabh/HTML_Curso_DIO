@@ -1,5 +1,7 @@
 # **HTML I - Conceitos Básicos**
 
+#### Trabalhando com formulários HTML
+
 Rever algumas tags HTML. Entender como funcionam os formulários de um website e como uma informação enviada através de formulário chega até o servidor.
 
 * **Tag `<form>`**
@@ -108,7 +110,6 @@ Rever algumas tags HTML. Entender como funcionam os formulários de um website e
   
   [] - Cerveja
   
-
 * **Button e seus tipos**
 
   Utilizando a tag `<button>`, podemos criar três tipos de botões que se comportam de forma semelhante, mas têm funcionalidades diferentes.

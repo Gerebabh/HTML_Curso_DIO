@@ -1,26 +1,210 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estruturando HTML</title>
+    <style>
+        .row {
+            margin: 5px;
+        }
+
+        label {
+            width: 100px;
+            text-align: rigth;
+            display: inline-block;
+            padding-right: 5px;
+        }
+
+        fieldset {
+            margin: 15px 0;
+            border-radius: 10px;
+            border-color: grey;
+
+        }
+    </style>
 </head>
+
 <body>
     <header>Estruturando HTML + Formatações</header>
     <hr />
-    <h4">Formatando texto - Parte 1</h4>
-    <p style="text-align: center; color: blue;">Programe o seu futuro global agora!</p>
-    &lt;i&gt; Itálico - <i>Programe o seu futuro global agora!</i><br />
-    &lt;b&gt; Negrito - <b>Programe o seu futuro global agora!</b><br />
-    &lt;u&gt; Sublinhado - <u>Programe o seu futuro global agora!</u><br />
-    &lt;mark&gt; Marca-texto - <mark>Programe o seu futuro global agora!</mark><br />
-    &lt;sup&gt; Ajuste Superior - Reduz um pouco tamanho da fonte e desloca para cima - 10<sup>2</sup><br />
-    &lt;sub&gt; Ajuste Inferior - Reduz um pouco tamanho da fonte e desloca para baixo - 10<sub>2</sub><br />
-    &lt;blockquote&gt; Citação: <blockquote>Programe o seu futuro global agora!</blockquote><br />
-    <hr />
 
     <h4">Formatando texto - Parte 1</h4>
-    
+        <p style="text-align: center; color: blue;">Programe o seu futuro global agora!</p>
+        &lt;i&gt; Itálico - <i>Programe o seu futuro global agora!</i><br />
+        &lt;b&gt; Negrito - <b>Programe o seu futuro global agora!</b><br />
+        &lt;strong&gt; Negrito "Especial" - <b>Programe o seu futuro global agora!</b><br />
+        &lt;u&gt; Sublinhado - <u>Programe o seu futuro global agora!</u><br />
+        &lt;mark&gt; Marca-texto - <mark>Programe o seu futuro global agora!</mark><br />
+        &lt;sup&gt; Ajuste Superior - Reduz um pouco tamanho da fonte e desloca para cima - 10<sup>2</sup><br />
+        &lt;sub&gt; Ajuste Inferior - Reduz um pouco tamanho da fonte e desloca para baixo - 10<sub>2</sub><br />
+        &lt;blockquote&gt; Citação: <blockquote>Programe o seu futuro global agora!</blockquote><br />
+        <hr />
+
+        <h4>Formatando texto - Parte 2</h4>
+        <p>Neste caso será utilizado a tag &lt;font&gt; ela aplicada sozinha não produz nenhum efeito e precisa de
+            atributo especificado.</p>
+        <p>Como exemplo a tag &lt;font&gt; foi aplicado o atributo &lt;color="red"&gt;, ou seja, cor vermelha, a fonte
+            alterada para `face="Trebouchet MS, calibri, arial" e essa sequencia de fontes significa que na ausência da
+            primeira definição, seguirá para a próxima e assim em diante.</p>
+        <p>Essa tag &lt;font&gt; foi descontinuada para o HTML5 e não é mais recomendada para uso ao invés disso é
+            recomendada a utilização do CSS para estilização de texto. Foi citada apenas como exemplo acadêmico de
+            codificação.</p>
+        <p>&lt;font color="red" face="Trebuchet MS, calibri, arial"&gt;Programe o seu futuro global agora!&lt;/font&gt;
+        </p>
+        <font color="red" face="Trebuchet MS, calibri, arial">Programe o seu futuro global agora!</font>
+        <br /><br />
+        <hr />
+
+        <h4>&lt;DIV&gt; e &lt;SPAN&gt;</h4>
+        <div id="menu_lateral">
+            <div id="links">
+                <ul>
+                    <li><a href="https://dio.me" target="_blank">DIO</a></li>
+                    <li><a href="https://github.com/gerebabh" target="_blank">GitHub</a></li>
+                    <li><a href="https://w3schools.com" target="_blank">w3Schools</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>A tag &lt;div&gt; em HTML é uma tag de nível de bloco que é usada para agrupar elementos e aplicar estilos
+            CSS. Ela não tem nenhum significado semântico por si só, mas é útil para agrupar elementos para fins de
+            estilo ou porque eles compartilham atributos comuns. A tag &lt;div&gt; cria uma quebra de linha após o
+            conteúdo, pois é uma tag de nível de bloco.</p>
+        Por exemplo:
+        <div style="color:blue;background-color: rgb(211, 243, 243);">
+            <p>Este é um parágrafo.</p>
+            <p>Este é outro parágrafo.</p>
+        </div>
+        <p>Ao utilizar uma DIV ela ocupa a linha inteira, veja a cor de fundo "aqua" que representa o espaço da DIV
+            (display:block).</p>
+
+        <p>Por outro lado, a tag &lt;span&gt; em HTML é uma tag de nível de linha que é usada para agrupar elementos em
+            linha ou para aplicar estilos a partes do texto. Ela também não tem nenhum significado semântico por si só.
+            A tag &lt;span&gt; não cria uma quebra de linha após o conteúdo, pois é uma tag de nível de linha.</p>
+        Por exemplo:
+        <p>Este é um <span style="color:blue; background-color:rgb(211, 243, 243) ;">texto</span> com uma palavra em
+            azul.</p>
+        <p>Neste exemplo, a palavra “texto” será exibida em azul, enquanto o restante do texto será exibido na cor
+            padrão.</p>
+        <hr />
+
+        <h4>Fieldset</h4>
+        <p>O elemento &lt;fieldset&gt; em HTML é usado para agrupar elementos relacionados em um formulário. Ele pode
+            ser muito útil para ajudar os usuários a entenderem a estrutura de um formulário, especialmente se ele for
+            longo e complexo.
+        <p>A exemplo um formulário de cadastro ao qual temos dados pessoais e endereço.</p>
+        <p>Podemos fazer dois fieldset's um que engloba "Dados pessoais" como Nome, E-mail, CPF , etc e outro com
+            "Endereço" contendo logradouro, número, bairro, cidade, estado.</p>
+        Utilizando a tag &lt;legend&gt;&lt;/legend&gt; damos ao fieldset um nome.
+
+        <h3>Formulário de cadastro</h3>
+        <form>
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <div class="row">
+                    <label>Nome:</label><input type="text" />
+                    <label>E-mail:</label><input type="email" />
+                </div>
+
+                <div class="row">
+                    <label>Profissão:</label><input type="text" />
+                    <label>Empresa:</label><input type="text" />
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Endereço</legend>
+                <div class="row">
+                    <label>Logradouro:</label><input type="text" />
+                    <label>Número:</label><input style="width: 30px" type="number" width="10" />
+                </div>
+
+                <div class="row">
+                    <label>Bairro:</label><input type="text" />
+                </div>
+
+                <div class="row">
+                    <label>Cidade/UF:</label><input type="text" />
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informações de contato</legend>
+                <div class="row">
+                    <label>Celular:</label><input type="tel" />
+                    <label>Whatsapp:</label><input type="tel" />
+                </div>
+
+                <div class="row">
+                    <label>Linkedin:</label><input type="url" />
+                    <label>GitHub:</label><input type="url" />
+                </div>
+            </fieldset>
+
+            <div class="row">
+                <button type="reset">Limpar</button>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+        <br />
+        <hr />
+
+        <h4>Embed</h4>
+        <p>A tag &lt;embed&gt; em HTML é usada para incorporar conteúdo como arquivos multimídia em uma página da web.
+            Ela foi introduzida no HTML 5 e substituiu a necessidade de usar plugins de terceiros, como o Flash, para
+            incorporar conteúdo multimídia. A tag `<embed>` é uma tag vazia, o que significa que não tem uma tag de
+            fechamento.</p>
+        Por exemplo:<br />
+        <embed src="vid/treino.mp4" autoplay="0" width="300" height="200">
+        <p>Neste exemplo, um arquivo de vídeo chamado “treino.mp4” está sendo incorporado na página da web.</p>
+        <br />
+        <hr />
+
+        <h4>Frameset</h4>
+        <p>A tag &lt;frameset&gt; em HTML era usada para dividir a janela do navegador em várias seções, cada uma capaz
+            de carregar um documento HTML separado. No entanto, ela foi descontinuada no HTML5 em favor do uso de
+            iframes e CSS para alcançar layouts semelhantes. Portanto, o uso da tag &lt;frameset&gt; não é mais
+            recomendado.</p>
+        <br />
+        <hr />
+
+        <h4>Iframe</h4>
+        <p>A tag &lt;iframe&gt; em HTML é usada para incorporar outro documento HTML dentro do documento atual. Ela
+            substituiu a necessidade de usar a tag &lt;frameset&gt;. A tag &lt;iframe&gt; é útil para incorporar
+            conteúdo como mapas do Google Maps ou vídeos do YouTube em uma página da web.</p>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3704.5497294589336!2d-48.177161323910845!3d-21.79768099917807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b8f352fa75fecf%3A0xf04febe826f6d95d!2sDigital%20Innovation%20One!5e0!3m2!1spt-BR!2sbr!4v1696907832751!5m2!1spt-BR!2sbr"
+            width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p>Neste exemplo um conteúdo do Google Maps foi incorporado na página atual.</p>
+        <p>Outro exemplo é abrir uma pagina de terceiro dentro da sua página. Exemplo</p>
+        <iframe src="https://aoraboni.com" width="600" height="400"></iframe>
+        <br /><br />
+        <hr />
+
+        <h4>Cores</h4>
+        <p>Como base para cores podemos consultar o site w3schools</p>
+        <ul>
+            <li><a href="//www.w3schools.com/colors/" target="_blank">Tutorial de cores</a></li>
+            <li><a href="https://www.w3schools.com/tags/ref_colornames.asp" target="_blank">HTML Color Names</a></li>
+            <li><a href="https://www.w3schools.com/colors/colors_picker.asp" target="_blank">HTML Color Picker</a></li>
+        </ul>
+
+        <p>As cores podem ser determinadas em seu HTML de várias formas além do nome da cor:</p>
+        <ul>
+            <li><b>RGB</b> - Combinação de vermelho, verde e azul (Red, Green e Blue).</li>
+            <li><b>HEX</b> - Combinação de vermelho, verde e azul, mas escrito em hexadecimal.</li>
+            <li><b>HSL</b> - Matiz (HUE), Saturação(Saturation) e Iluminação(Lighten). A matiz tem os valores onde 0 é
+                vermelho, 120 verde, 240 azul.</li>
+            <li><b>RGBA</b> - Mesmo que RGB, porém adicionado canal Alpha (Transparência).</li>
+            <li><b>HSLA</b> - Mesmo que HSL, porém adicionado canal Alpha (Transparência).</li>
+        </ul>
+        <p>Teste abaixo. Utilize navegue entre os formatos de cor utilizando o seletor.</p>
+        <input type="color" /><br />
+        <br /><br />
+        <hr />
 
 </body>
+
 </html>

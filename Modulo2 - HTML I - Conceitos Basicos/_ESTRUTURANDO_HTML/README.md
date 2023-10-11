@@ -173,12 +173,3 @@
   * **HSL** - Matiz (HUE), Saturação(Saturation) e Iluminação(Lighten). A matiz tem os valores onde 0 é vermelho, 120 verde, 240 azul.
   * **RGBA** - Mesmo que RGB, porém adicionado canal Alpha (Transparência).
   * **HSLA** - Mesmo que HSL, porém adicionado canal Alpha (Transparência).
-
-  
-
-  
-
-  
-
-  
-

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Mídias</title>
+    <style>
+        body {
+            background-color: black;
+            color:rgb(255, 255, 255);
+            font-family: Calibri;
+        }
+        h4 {
+            color:rgba(6, 143, 143, 0.911);
+        }
+        span {
+            color: greenyellow;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .row {
+            display: flex;
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center; /* Centraliza verticalmente */
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>Trabalhando com mídias</header>
+    <hr />
+    Neste capítulo vamos conhecer as tags de mídia. Uma boa utilização de mídias no HTML poderão enriquecer a experiência do usuário no site.
+
+    <ul>
+        <li><b><a href="index.html#tag_img">&lt;img&gt;</a> - </b>Esta tag é usada para incorporar imagens em uma página HTML. Ela permite que você exiba imagens em seu site, especificando o atributo `src` (source) para o URL da imagem.</li>
+        <li><b><a href="index.html#tag_audio">&lt;audio&gt;</a> - </b>A tag &lt;audio&gt; é usada para incorporar áudio em uma página HTML. Você pode especificar a origem do áudio usando o atributo `src` e adicionar controles de reprodução usando o atributo `controls`.</li>
+        <li><b><a href="index.html#tag_video">&lt;video&gt;</a> - </b>A tag &lt;video&gt; é semelhante à tag &lt;audio&gt;, mas é usada para incorporar vídeos. Você pode especificar o vídeo usando o atributo `src` e adicionar controles de reprodução usando o atributo `controls`.</li>
+        <li><b><a href="index.html#tag_track">&lt;track&gt;</a> - </b>A tag &lt;track&gt; é usada para adicionar legendas a um vídeo HTML. Você pode especificar o arquivo de legenda usando o atributo `src` e definir o idioma usando o atributo `srclang`.</li>
+        <li><b><a href="index.html#tag_track">&lt;iframe&gt;</a> - </b>A tag &lt;iframe&gt; permite incorporar outro documento HTML em sua página, geralmente usado para incorporar conteúdo de outras páginas da web. Você pode especificar a origem usando o atributo `src`.</li>
+    </ul>
+
+    <h4 id="tag_img">&lt;img&gt;</h4>
+
+    <span>Gun fight - Raptors Paintball (jpg)</span><br />
+    <img title="Foto Paintball" src="img/gunfight.JPG" alt="Jogando paintball sem loader." width="300" /><br />
+    <span>Break out (gif)</span><br />
+    <img title="GifBreak out PB" src="img/paintball-break.gif" width="300" /><br />
+    <span>Imagem com Fundo Transparente (png)</span><br />
+    <img title="Logo Raptors Team" src="img/logo.png" width="300" /><br />
+    <span>Imagem em Vetor (svg)</span><br />
+    <img title="Imagem em Vetor" src="img/html5.svg" width="200" /><br />
+    <br /><hr />
+
+    <h4 id="tag_audio">&lt;audio&gt;</h4>
+    <fieldset style="width: 500px; margin: 0 auto;">
+        <legend>Master Of Puppets</legend>
+        <div class="row">
+            <img src="img/master cover.jpg" alt="MOP" width="75" style="margin-right: 30px;"/>
+            <audio src= "aud/MOP.mp3" controls></audio>
+        </div>
+    </fieldset>
+    <br /><hr />
+
+    <h4 id="tag_video">&lt;video&gt;</h4>
+    <video src="vid/treino.mp4" controls width="300"></video>
+    <br /><hr />
+
+    <h4 id="tag_track">&lt;track&gt;</h4>
+    <video controls width="300">
+        <source src="vid/treino.mp4" />
+        <track default src="vid/treino.vtt" kind="captions" srclang="pt-br" />
+        <track src="vid/treino_en.vtt" kind="captions" srclang="en" />
+    </video>
+    <br /><hr />
+
+    <h4 id="tag_iframe">&lt;iframe&gt;</h4>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/dY_zr_nLyV0?start=0&end=48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>"<br />
+    <span>Local onde foi disputado este campeonato Brasileiro de X-ball em 2018. Raptors Team - MG vs Renegados - BA.</span><br />
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d620.6238128116634!2d-46.647275860494304!3d-23.06796614063358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cec568cf4ac68d%3A0xbb44608225155e11!2sAtibaia%20Paintball%20Club!5e1!3m2!1spt-BR!2sbr!4v1696988680779!5m2!1spt-BR!2sbr" width="560" height="315" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <br /><hr />
+
+</body>
+</html>

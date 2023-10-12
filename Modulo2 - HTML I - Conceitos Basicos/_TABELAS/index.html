@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas com HTML</title>
+    <style>
+        body {
+            background-color: black;
+            color:rgb(255, 255, 255);
+            font-family: Calibri;
+        }
+        h4 {
+            color:rgba(6, 143, 143, 0.911);
+        }
+        span {
+            color: greenyellow;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        table {
+            border: solid 1px grey;
+        }
+        table thead th {
+            color: black;
+            background-color: white;
+            border: solid 1px;  
+        }
+        table tbody tr:nth-child(even) td {
+            background-color: rgba(128, 128, 128, 0.103);
+        }
+        table tbody tr:hover td {
+            background-color: rgba(231, 229, 229, 0.486);
+        }
+        table tfoot td{
+            color: black;
+            background-color:lightslategray  ;
+        }
+    </style>   
+</head>
+<body>
+    <header>Tabelas com HTML</header>
+    <hr />
+    <p>As tabelas são uma forma de apresentar dados de forma tabular, onde as colunas estão dispostas verticalmente, as linhas estão dispostas horizontalmente e as interseções dessas colunas e linhas são as células.</p>
+    <p>No início da era da web, nos anos 2000, as tabelas eram de fato usadas para layout de sites, o que não é considerado uma prática recomendada atualmente. No entanto, as tabelas ainda são úteis e amplamente utilizadas para apresentar dados tabulares, como tabelas de preços, informações tabulares e dados estatísticos.</p>
+    <p>As tabelas não são mais utilizadas no contexto do uso para layout de sites. Isso ocorreu porque o desenvolvimento web evoluiu para usar folhas de estilo (CSS) e elementos semânticos, como &lt;div&gt;, &lt;section&gt;, &lt;article&gt;, &lt;header&gt;, &lt;footer&gt;, etc., para estruturar o conteúdo dos sites. Tabelas são semânticas quando usadas para apresentar dados tabulares.</p>
+    <p>As tabelas não são usadas para estruturar um site inteiro, mas ainda são usadas de forma legítima para apresentar dados tabulares, e isso é considerado uma prática válida e importante na web.</p>
+    <p>É verdade que o uso indevido de tabelas para estruturar um site pode torná-lo mais pesado e lento para carregar, e também pode prejudicar a acessibilidade. No entanto, ao usar tabelas para o propósito correto (exibição de dados tabulares), essas preocupações não se aplicam.</p>
+    <p>Em resumo, tabelas têm um lugar legítimo na web quando usadas para apresentar dados tabulares, mas não devem ser usadas para o layout geral de um site, como foi feito no passado.</p>
+    
+    <h4>Tags para construção de tabelas.</h4>
+
+    <table summary="Tabela para explicação de tags específicas para tabelas" cellspacing="0">
+        <thead>
+            <tr>
+                <th>tag</th>
+                <th>Descrição</th>
+            </tr>    
+        </thead>
+        <tbody>
+            <tr>
+                <td>table</td>
+                <td>É usada para criar uma tabela HTML. Ela atua como o contêiner principal para todos os outros elementos relacionados à tabela.</td>
+            </tr>
+            <tr>
+                <td>tr</td>
+                <td>Representa uma linha em uma tabela. É usada para agrupar células na horizontal.</td>
+            </tr>
+            <tr>
+                <td>td e th</td>
+                <td>representam células individuais dentro de uma tabela. &lt;td&gt; é usado para células regulares de dados, enquanto &lt;th&gt; é usado para cabeçalhos de coluna ou células de dados importantes (normalmente em negrito).</td>
+            </tr>
+            <tr>
+                <td>tbody, thead, tfoot</td>
+                <td>sses elementos ajudam a organizar melhor a estrutura de uma tabela. &lt;thead&gt; é usado para agrupar o cabeçalho da tabela, &lt;tbody&gt; para agrupar o conteúdo principal da tabela e &lt;tfoot&gt; para agrupar o rodapé da tabela. Eles não são estritamente necessários, mas podem ser úteis para tornar o código da tabela mais organizado e semântico.</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td colspan="2" align="center">Definição das tags</td>
+        </tfoot>
+    </table>
+
+    <br /><hr />
+
+    <table summary="Tabela de nome e idade" width="250" align="center" cellspacing="0" style="-webkit-box-shadow: 12px 14px 6px 5px rgba(255, 255, 255, 0.25); box-shadow: 12px 14px 6px 5px rgba(255, 255, 255, 0.25);">
+        <caption>Tabela Usuários por nome e idade</caption>
+        <thead>
+            <tr>
+                <th title="Nome completo">Nome</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="1">
+                <td>Oreo</td>
+                <td>5</td>
+            </tr>
+            <tr id="2">
+                <td>Geraldo</td>
+                <td>44</td>
+            </tr>
+            <tr id="3">
+                <td>Erica</td>
+                <td>37</td>
+            </tr>
+            <tr id="4">
+                <td>Marly</td>
+                <td>83</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>4</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>

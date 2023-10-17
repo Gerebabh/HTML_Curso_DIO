@@ -126,3 +126,15 @@ button {
 button[type="reset"] {
     background-color: rgb(170, 33, 33); /* Estilo para o botão de Limpar */
 }
+/* Estilos para a seção de imagens e vídeos na seção Sobre */
+.img-videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sobre-image,
+.sobre-video {
+    width: 300px;
+    margin: 10px;
+}

@@ -19,7 +19,6 @@ O curso está dividido em três módulos, sendo:
   * Criando Tabelas com HTML.
   * Desafio - Criando Primeiro Site Completo com HTML.
 * **HTML II - Ampliando o conhecimento**
-  * Entendo o HTML Semântico.
+  * Entendendo o HTML Semântico.
   * HTML: Recursos Especiais.
   * Desafio - Recriando o Wikipédia com Layout Moderno.
-  

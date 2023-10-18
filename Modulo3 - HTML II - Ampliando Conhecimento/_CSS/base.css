@@ -1,0 +1,17 @@
+header {
+    text-align: center;
+    color: chartreuse;
+}
+body {
+    font-family:"Trebuchet MS", Calibri, Arial, sans-serif; font-size: 14px;
+    background-color: #000000;
+    color: white;
+    justify-content: center;
+}
+h4, h5 {
+    color: chartreuse;
+}
+.link_sem_decoration {
+    text-decoration: none;
+    color: chartreuse;
+}

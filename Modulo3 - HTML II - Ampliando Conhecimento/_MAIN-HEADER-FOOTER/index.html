@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../_CSS/base.css" />
+    <title>Tags HTML5 - Uso de Tags Estruturais</title>
+</head>
+<body>
+    
+    <header>
+        <h2>Tags estruturais - &lt;header&gt;, &lt;main&gt; &lt;footer&gt;</h2>
+    </header>
+    
+    <hr />
+    
+    <main>
+        <p>A tag &lt;main&gt; deve ser filha direta de &lt;body&gt; e nenhuma outra. Ela é projetada para desenvolver o conteúdo principal de uma página web. Portanto deve haver apenas uma tag &lt;main&gt; por página.</p>
+        <pre><code>
+            ...
+            &lt;body&gt;
+                &lt;main&gt;
+                    &lt;!--Conteúdo principal da página.--&gt;
+                &lt;/main&gt;
+            &lt;/body&gt;
+            ...
+        </code></pre>
+        <p>Entretanto as tags estruturais como exemplo &lt;header&gt;, &lt;footer&gt;, &lt;article&gt;, &lt;nav&gt; entre outras podem ser filhas da tag &lt;main&gt;. Mesmo as tags &lt;header&gt; e &lt;footer&gt; podendo serem utilizadas dentro da tag &lt;main&gt; é recomendado que elas sejam filhas diretas da tag &lt;body&gt;. Portanto, alinhado com as melhores práticas, uma vez que estas tags geralmente representam elementos globais da página, como cabeçalho e rodapés, que não estão diretamente relacionados ao conteúdo principal da página a melhor forma de construir o HTML é esta:</p>
+        <pre><code>
+            ...
+            &lt;body&gt;
+                &lt;header&gt;
+                    &lt;!--Conteúdo do cabeçalho.--&gt;
+                &lt;/header&gt;
+                &lt;main&gt;
+                    &lt;!--Conteúdo principal da página.--&gt;
+                &lt;/main&gt;
+                &lt;footer&gt;
+                    &lt;!--Conteúdo do rodapé.--&gt;
+                &lt;/footer&gt;
+            &lt;/body&gt;
+            ...
+        </code></pre>
+    
+    </main>
+
+    <hr />
+
+    <footer>
+        <p>Documento feito com base nos estudos do CURSO DE HTML <a class="link_sem_decoration" href="https://dio.me" target="_blank">DIO</a>.</p>
+    </footer>
+
+</body>
+</html>

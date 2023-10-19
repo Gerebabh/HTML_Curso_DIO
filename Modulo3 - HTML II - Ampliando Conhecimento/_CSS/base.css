@@ -1,4 +1,4 @@
-header {
+h2 {
     text-align: center;
     color: chartreuse;
 }
@@ -8,10 +8,100 @@ body {
     color: white;
     justify-content: center;
 }
-h4, h5 {
+h3, h4, h5 {
     color: chartreuse;
 }
 .link_sem_decoration {
     text-decoration: none;
     color: chartreuse;
+}
+
+.none{
+    color: white;
+    text-align: left;
+}
+nav ul{
+    display: flex;
+    list-style: none ;
+    margin: 0;
+}
+nav ul li a{
+    padding: 10px 15px;
+    color: chartreuse;
+    text-decoration: none;
+    border-radius: 5px;
+}
+nav ul li a:hover{
+    color: white;
+    background-color: rgba(128, 255, 0, 0.233)
+}
+/*Article*/
+.previsao {
+    margin: 0;
+    padding: 5px;
+    background-color: #eee;
+    border-radius: 5px;
+}
+  
+.previsao > h1,
+.previsao-dia {
+    color: black;
+    margin: 5px;
+    padding: 3px;
+    font-size: 20px;
+}
+  
+.previsao-dia {
+    background: url('../img/th.jpeg') no-repeat left white;
+    border-radius: 5px;
+    background-size: contain;
+    padding: 0px;
+}
+  
+.previsao-dia > h2,
+.previsao-dia > p {
+    background: none;
+    text-align: right;
+}
+/*Article 2*/
+.spacetoday {
+    margin: 0px;
+    padding: 2px;
+    border-radius: 5px;
+    background: url('../img/spacetoday.jpg') no-repeat right rgba(7, 7, 189, 0.5);
+}
+.spacetoday h1 {
+    display: inline-block;
+    background-color: grey;
+    border-radius: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.spacetoday p {
+    background-color: grey;
+    border-radius: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    max-width: 700px;
+}
+
+/*blockquote*/  
+blockquote {
+margin: 0;
+}
+
+blockquote p {
+    padding: 15px;
+    color: black;
+    background: #eee;
+    border-radius: 5px;
+}
+
+blockquote p::before { /* Representa as aspas de abertura, antes de cada elemento <p>*/
+    content: '\201C';
+}
+
+blockquote p::after { /* Representa as aspas de fechamento, após cada elemento <p>*/
+    content: '\201D';
 }

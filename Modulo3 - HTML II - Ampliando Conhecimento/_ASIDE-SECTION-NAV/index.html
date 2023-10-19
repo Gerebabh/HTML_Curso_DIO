@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../_CSS/base.css" />
+    <title>Tags HTML5 - Uso de Tags Estruturais</title>
+</head>
+<body>
+    <header>
+        <h2>Tags estruturais - &lt;aside&gt;, &lt;section&gt; &lt;nav&gt;</h2>
+        <nav>
+            <ul>
+                <li><a href="#">Item 1</a></li>
+                <li><a href="tel: +553199999-8877">Telefone</a></li>
+                <li><a href="https://wa.me/553199999-8877" target="_blank">Whatsapp</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <hr />
+    
+    <main>
+        <h3>&lt;section&gt;</h3>
+        <p>O elemento HTML &lt;seção&gt; representa uma seção autônoma genérica de um documento, que não tem um elemento semântico mais específico para representá-lo. As seções devem sempre ter um título, com pouquíssimas exceções. Exemplo:</p>
+        <h5>Código:</h5>
+        <pre><code>
+            &lt;section&gt;
+                &lt;h2&gt;Este é um título de seção&lt;/h2&gt;
+                &lt;p&gt;Este é um páragrafo de exemplo para esta seção&lt;/p&gt;
+            &lt;/section&gt;
+        </code></pre>
+        <article>
+            <h5>Resultado:</h5>
+            <section>
+                <h2 class="none">Este é um título de seção</h2>
+                <p>Este é um páragrafo de exemplo para esta seção</p>
+            </section>
+        </article>
+
+        <hr />
+
+        <h3>&lt;aside&gt;</h3>
+        <p>O elemento HTML &lt;aside&gt; representa uma parte de um documento cujo conteúdo está apenas indiretamente relacionado ao conteúdo principal do documento. Os elementos &lt;aside&gt; são frequentemente apresentados como barras laterais ou caixas de chamada. Desta forma, o que estiver em &lt;aside&gt; não precisa necessariamente ter relação com o assunto principal da página. Exemplos de conteúdo que podem ser incluídos em um &lt;aside&gt; incluem anúncios, classificados, links, etc.</p>
+        <p>É importante notar que a tag &lt;aside&gt; e a tag &lt;section&gt; têm propósitos diferentes e sua importância depende do contexto em que são usadas. A tag &lt;section&gt; é usada para agrupar conteúdo relacionado e geralmente inclui um título. A tag &lt;aside&gt;, por outro lado, é usada para conteúdo que pode ser considerado separado do conteúdo ao seu redor. Exemplo:</p>
+        <h5>Código</h5>        
+        <pre><code>
+            ...
+            &lt;p&gt;O filme da Disney &lt;cite&gt;A Pequena Sereia&lt;/cite&gt; foi lançado nos cinemas pela primeira vez em 1989.&lt;/p&gt;
+            &lt;aside&gt;
+                &lt;O filme arrecadou $87 milhões durante o primeiro lançamento.&gt;
+            &lt;/aside&gt;
+            &lt;p&gt;Mais informções sobre o filme...&lt;/p&gt;
+            ...
+        </code></pre>
+        <h5>Resultado:</h5>
+        <article>
+            <p> O filme da Disney <cite>A Pequena Sereia</cite> foi lançado nos cinemas pela primeira vez em 1989.</p>
+            <aside>
+                <p>O filme arrecadou $87 milhões durante o primeiro lançamento.</p>
+            </aside>
+            <p>Mais informções sobre o filme...</p>
+        </article>    
+        
+        <hr />
+
+        <h3>&lt;nav&gt;</h3>
+        <p>O elemento HTML &lt;nav&gt; representa uma seção de uma página cuja finalidade é fornecer links de navegação, dentro do documento atual ou para outros documentos. Exemplos comuns de seções de navegação são menus, sumários e índices.</p>
+        <p>Para exemplificar nesta página foi feito um &lt;nav&gt; no &lt;header&gt; e pode ser visualizado no topo da página.</p>
+        <pre><code>
+            &lt;nav&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Item 1&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Item 2&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Item 3&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/nav&gt;
+        </code></pre>
+    </main>
+
+    <hr />
+
+    <footer>
+        <p>Documento feito com base nos estudos do CURSO DE HTML <a class="link_sem_decoration" href="https://dio.me" target="_blank">DIO</a>.</p>
+        <p><a class="link_sem_decoration" href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">Informações e estudos deste documento foram consultadas em <cite>Mmdn web docs</cite>.</a></p>
+    </footer>
+    <br  />
+</body>
+</html>

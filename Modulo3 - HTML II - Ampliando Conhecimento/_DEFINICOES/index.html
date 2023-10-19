@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../_CSS/base.css" />
+    <title>HTML5 - Introdução à Semântica</title>
+</head>
+<body>
+    
+    <header>
+        <h1 id="inicio">HTML II - Ampliando o conhecimento</h1>
+        <hr />
+    </header>
+    
+    <main>
+        <h3>Tópicos</h3>
+        <ul>
+            <li><a style="color:chartreuse" href="#semantica">HTML - Semântica</a></li>
+            <li><a style="color:chartreuse" href="#html4_5">Diferenças do HTML4 para o HTML5</a></li>
+            <li><a style="color:chartreuse" href="#acessibilidade">Introdução sobre Acessibilidade</a></li>
+            <li><a style="color:chartreuse" href="#websraping">Introdução ao Web Scraping</a></li>
+        </ul>
+
+        <h2 id="semantica">Semântica</h2>
+        <h4>O que é semântica</h4>
+        <p>Num sistema linguístico, o componente do sentido das palavras e da interpretação das sentenças e dos enunciados.</p>
+        <p>Um exemplo para identificar a semântica no caso do HTML. Antes do HTML5 eram utilizadas classes para separar partes do corpo do HTML.</p>
+        <pre><code>
+            &lt;body&gt;
+                &lt;div class="header"&gt;  &lt;!--Cabeçalho--&gt;
+                &lt;div class="main"&gt;    &lt;!--Corpo--&gt;
+                &lt;div class="footer"&gt;  &lt;!--Rodapé--&gt;
+            &lt;/body&gt;
+        </pre></code>
+        <p>Uma desvantagem de definir classes é que pode ser utilizada qualquer palavra como nome da classe, um exemplo é trocar o `header` por `cabecalho`. </p>
+        <p>Com o HTML5, foram introduzidas tags que melhoram a semântica do HTML. Isso significa que as tags são escolhidas de forma a descrever claramente o tipo de conteúdo que contêm. Isso é benéfico não apenas para os desenvolvedores humanos, que podem entender a estrutura do documento de forma mais intuitiva, mas também para os ‘robôs’ de ferramentas de busca e leitores de tela, que podem usar essa informação para fornecer resultados de busca mais precisos ou melhorar a acessibilidade do site. Aqui está um exemplo:</p>
+        <pre><code>
+            &lt;body&gt;
+                &lt;header&gt;&lt;/header&gt;  &lt;!--Cabeçalho--&gt;
+                &lt;main&gt;&lt;/main&gt;      &lt;!--Corpo--&gt;
+                &lt;footer&gt;&lt;/footer&gt;  &lt;!--Rodapé--&gt;
+            &lt;/body&gt;
+        </pre></code>
+        <a href="#inicio" style="color: chartreuse;">&lt; Início</a>
+        <hr />
+
+        <h2 id="html4_5">Diferenças do HTML4 para o HTML5</h2>
+        <h4>Informações básicas sobre diferênças entre HTML4 e HTML5</h4>
+        <p>Com o desenvolvimento do HTML5 foram disponibilizadas muitas mudanças / melhorias. A <b>W3C</b> disponibiliza a documentação para consulta sobre estas diferenças. Veja <a class="link_sem_decoration" href="https://www.w3.org/TR/html5-diff/" target="_blank">aqui</a>.</p>
+        <p>Foram criados novos atributos e tags, enquanto outros foram alterados ou ficaram obsoletos.</p>
+    
+        <h5>Exemplos de novos elementos:</h5>
+        <ul>
+            <li>&lt;main&gt;: Representa o conteúdo principal único de um documento ou aplicativo.</li>
+            <li>&lt;header&gt;: Representa um grupo de conteúdo introdutório ou de navegação.</li>
+            <li>&lt;footer&gt;: Representa um rodapé para a seção mais próxima de ancestrais ou para o corpo inteiro.</li>
+            <li>&lt;nav&gt;: Representa uma seção de uma página que contém links de navegação.</li>
+            <li>&lt;section&gt;: Representa uma seção genérica contida em um documento HTML, geralmente com um título.</li>
+            <li>&lt;aside&gt;: Representa uma seção do conteúdo que é apenas indiretamente relacionada ao conteúdo principal.</li>
+            <li>&lt;article&gt;: Representa um componente independente de um documento, página, aplicativo ou site.</li>
+            <li>&lt;video&gt;: Usado para incorporar conteúdo de vídeo em documentos. Ele pode conter várias fontes de vídeo representadas por elementos filho &lt;source&gt;, dentro do elemento &lt;video&gt;.</li>
+        </ul>
+        <h5>Exemplos de elementos depreciados:</h5>
+        <p>&lt;basefont&gt;, &lt;big&gt;, &lt;center&gt;, &lt;font&gt;, &lt;strike&gt;, &lt;tt&gt;, &lt;frame&gt;, &lt;frameset&gt;...</p>
+        <a href="#inicio" style="color: chartreuse;">&lt; Início</a>
+        <hr />
+
+        <h2 id="acessibilidade">Acessibilidade</h2>
+        <h4>Introdução sobre Acessibilidade</h4>
+        <blockquote>
+            <p><i>"A acessibilidade é essencial para desenvolvedores e organizações que desejam criar sites e ferramentas da Web de alta qualidade e não excluir as pessoas de usar seus produtos e serviços.</i></p>
+            <p><i>A missão da Iniciativa de Acessibilidade da Web (WAI) é levar a Web a todo o seu potencial para ser acessível, permitindo que pessoas com deficiência participem igualmente na rede."</i></p>
+            <b>W3C</b>
+        </blockquote>
+
+        <h5>Exemplo com imagem</h5>
+        <p>Abaixo foram inseridas duas imagens `.jpg`. Ambas imagens se tratam de uma mensagem motivacional sendo uma delas com os seguintes dizeres:</p>
+        <blockquote>
+            <i>"Confie no que a vida planejou para você!"</i>
+        </blockquote>
+        <p>Para aplicar a acessibilidade nesta imagem devemos utilizar a tag `&lt;alt=""&gt;`. Desta forma um usuário, por exemplo com deficiência visual ao utilizar um programa que interprete as informações do HTML (EXEMPLO: NVDA) fará a leitura do texto para o mesmo.</p>
+        <pre><code>
+            &lt;img src="../img/motivacao1.jpg" width="350" alt="Confie no que a vida planejou para você!" /&gt;
+        </pre></code>
+        <div>
+            <img src="../img/motivacao1.jpg" width="350" alt="Confie no que a vida planejou para você!" />
+            <img src="../img/motivacao2.jpg" width="350" alt="Confie em você e no seu potencial. Você pode fazer muito mais do que imagina!"/>
+        </div>
+
+        <p>O tema acessibilidade é muito extenso e requer um estudo bem mais aprofundado. Este é apenas um exemplo.</p>
+
+        <a href="https://www.w3.org/WAI/WCAG21/" target="_blank" class="link_sem_decoration">WCAG (WEB CONTENT ACESSIBILITY GUIDELINES)</a>
+        <br /><br />
+        <a href="#inicio" style="color: chartreuse;">&lt; Início</a>
+        <hr />
+
+        <h2 id="websraping">Introdução ao Web Scraping</h2>
+        <h4>O que é Web Scraping?</h4>
+        <p>Web Scraping é uma técnica utilizada para extrair grandes quantidades de dados de websites onde os dados são extraídos e salvos em um formato local em seu computador ou em um banco de dados em formato de tabela (csv, xls, etc). O scraping é realizado pegando a página HTML de um site e extraindo os dados que precisamos.</p>
+        <p>Por exemplo, se quisermos extrair informações sobre produtos de um site de comércio eletrônico, primeiro precisamos entender a estrutura e o padrão do HTML da página. Em seguida, usamos essa estrutura para extrair as informações desejadas.</p>
+        <pre><code>
+            &lt;div class="product"&gt;
+                &lt;h2 class="product-name"&gt;Nome do Produto&lt;/h2&gt;
+                &lt;p class="product-price"&gt;Preço do Produto&lt;/p&gt;
+            &lt;/div&gt;
+        </pre></code>
+        <p>No exemplo acima, se quisermos extrair o nome e o preço do produto, precisaríamos identificar as classes CSS `product-name` e `product-price` e usar essas classes para extrair as informações.</p>
+        <h4>Por que usar Web Scraping</h4>
+        <p>Web Scraping é usado para coletar grandes informações da web. Esses dados podem ser usados para análise de dados, pesquisa de mercado, recuperação de informações e muitos outros propósitos.</p>
+
+        <b style="color: chartreuse;">Nota Importante:</b>
+        <p>Embora o web scraping seja uma ferramenta poderosa, é importante lembrar que nem todos os sites permitem web scraping. Antes de iniciar um projeto de web scraping, é importante verificar os Termos de Serviço do site para garantir que você não esteja violando nenhuma regra. Além disso, o scraping deve ser feito de maneira responsável e ética para evitar sobrecarregar os servidores do site.</p>
+        <a href="#inicio" style="color: chartreuse;">&lt; Início</a>
+    </main>
+
+    <hr />
+
+    <footer>
+        <p>Documento feito com base nos estudos do CURSO DE HTML <a class="link_sem_decoration" href="https://dio.me" target="_blank">DIO</a>.</p>
+    </footer>
+
+</body>
+</html>

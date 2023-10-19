@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../_CSS/base.css" />
+    <title>Tags HTML5 - Uso de Tags Estruturais</title>
+</head>
+<body>
+    <header>
+        <h2>Tags estruturais - &lt;artice&gt;, &lt;blockquote&gt; &lt;q&gt;</h2>
+        <nav>
+            <ul>
+                <li><a href="#">Item 1</a></li>
+                <li><a href="tel: +553199999-8877">Telefone</a></li>
+                <li><a href="https://wa.me/553199999-8877" target="_blank">Whatsapp</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <hr />
+    
+    <main>
+        <h3>&lt;article&gt;</h3>
+        <p>O elemento HTML &lt;article&gt; representa uma composição independente em um documento, página, aplicativo ou site, que se destina a ser distribuível independentemente ou reutilizável (por exemplo, em distribuição). Exemplos incluem: uma postagem no fórum, um artigo de revista ou jornal, ou uma entrada de blog, um cartão de produto, um comentário enviado pelo usuário, um widget ou gadget interativo ou qualquer outro item independente de conteúdo. Exemplo:</p>
+        
+        <article class="previsao">
+            <h1>Previsão do tempo para Belo Horizonte</h1>
+            <article class="previsao-dia">
+                <h2 class="previsao-dia">04 junho 2023</h2>
+                <p>Chuva.</p>
+            </article>
+            <article class="previsao-dia">
+                <h2 class="previsao-dia">05 junho 2023</h2>
+                <p>Períodos de Chuva.</p>
+            </article>
+            <article class="previsao-dia">
+                <h2 class="previsao-dia">06 junho 2023</h2>
+                <p>Chuva forte.</p>
+            </article>
+        </article>
+
+        <p>Outro exemplo:</p>
+        <article class="spacetoday">
+            <div class="content">
+                <h1>Elon Musk Fala Das Grandes Atualizações do Starship</h1>
+                <p>A SpaceX precisará de mais seis semanas ou mais para concluir a implementação de centenas de mudanças em seu foguete Super Heavy-Starship e na gigantesca plataforma de lançamento do Texas antes de estar pronto para uma segunda tentativa de alcançar a órbita, disse o fundador da empresa, Elon Musk, no sábado, dia 24 de junho de 2023...</p>
+                <p>Publicado por Sérgio Sacani em <time pubdate>25/06/2023</time>. Leia mais no <a class="link_sem_decoration" href="https://spacetoday.com.br/elon-musk-fala-das-grandes-atualizacoes-do-starship/" target="_blank">Blog Space Today</a>
+            </div>
+        </article>
+        
+
+        <hr />
+
+        <h3>&lt;blockquote&gt;</h3>
+        <p>O elemento HTML &lt;blockquote&gt; indica que o texto incluído é uma citação estendida. Normalmente, isso é renderizado visualmente por recuo. Uma URL para a fonte da citação pode ser dada usando o atributo, enquanto uma representação de texto da fonte pode ser dada usando o elemento &lt;cite&gt;.</p>
+        <blockquote cite="https://www.pensador.com/frases_stephen_hawking/">
+            <p>Eu não tenho nenhuma idéia (de qual seja o meu QI). Pessoas que se vangloriam dos seus QI são perdedores.</p>
+            <footer>
+                -Stephen, Hawking, <cite>Momento desconhecido</cite>
+            </footer>
+        </blockquote>
+        
+        <hr />
+
+        <h3>&lt;q&gt;</h3>
+        <p>Diferente do &lt;blockquote&gt; que suporta diversos parágrafos o &lt;q&gt; também é utilizado para citações, porém pequenos textos até mesmo por não ter quebra de linha.</p>
+        <q>Este é uma pequena citação. As aspas já são inseridas automáticamente. Também suporta o &lt;cite&gt;</q>
+
+    </main>
+
+    <hr />
+
+    <footer>
+        <p>Documento feito com base nos estudos do CURSO DE HTML <a class="link_sem_decoration" href="https://dio.me" target="_blank">DIO</a>.</p>
+        <p><a class="link_sem_decoration" href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">Informações e estudos deste documento foram consultadas em <cite>Mmdn web docs</cite>.</a></p>
+    </footer>
+    <br  />
+</body>
+</html>

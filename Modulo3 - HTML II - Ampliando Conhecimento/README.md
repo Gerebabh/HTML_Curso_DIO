@@ -12,7 +12,3 @@
 * `<nav>`, `<section>`, `<aside>`;
 * `<article>`, `<bloquote>`, `<q>`;
 * `<figure>`, `<figcaption>`, `<picture>`;
-* Resenha: O que é SEO?
-
-
-

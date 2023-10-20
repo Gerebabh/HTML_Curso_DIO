@@ -35,6 +35,11 @@ nav ul li a:hover{
     color: white;
     background-color: rgba(128, 255, 0, 0.233)
 }
+.row {
+    display: flex;
+    gap: 20px
+}
+
 /*Article*/
 .previsao {
     margin: 0;
@@ -105,3 +110,23 @@ blockquote p::before { /* Representa as aspas de abertura, antes de cada element
 blockquote p::after { /* Representa as aspas de fechamento, após cada elemento <p>*/
     content: '\201D';
 }
+kbd {
+    border: solid 1px ;
+/*Exemplo formatação pre e code*/
+}
+pre {
+    background-color: rgba(11, 3, 112, 0.212);
+    border: solid 1px;
+}
+code > span {           /*Formata o <span> quando estiver em <code>*/
+    color:red;
+}
+/*
+pre > code  {           /*Formata o <code> quando estiver em <pre>.
+    color: green
+}
+pre > p  {              /*Formata o <p> quando estiver em <pre>
+    font-style: italic;
+    color: white;
+}
+*/

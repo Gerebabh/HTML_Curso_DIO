@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../_CSS/base.css" />
+    <title>HTML - Recursos Especiais - HTML</title>
+</head>
+<body>
+    <header>
+        <h2>Recursos Especiais - HTML</h2>
+    </header>
+    
+    <hr />
+    
+    <main>
+        <h2>Datalist</h2>
+        <p>O elemento HTML &lt;datalist&gt; contém um conjunto de elementos &lt;option&gt; que representam as opções permitidas ou recomendadas disponíveis para escolha em outros controles.</p>
+        <p>Diferente do select que permite exclusivamente os valores determinados o &lt;datalist&gt; pemite que o usuário insira informações que não constem na lista. Uma vantagem em relação ao select é que ele oferece o "autocomplete".</p>
+        <h4>Veja os exemplos abaixo.</h4>
+        <div class="row">
+            <div>
+                <label for="browsers-datalist">Datalist: </label>
+                <input list="browsers" type="search" name="search" />
+                <datalist id="browsers">
+                    <option>Selecione um Navegador</option>
+                    <option>Google Chrome</option>
+                    <option>Firefox</option>
+                    <option>Edge</option>
+                    <option>Safari</option>
+                    <option>Opera</option>
+                </datalist>
+            </div>
+            <br />
+            <div>
+                <label for="browsers-select">Select: </label>
+                <select name="browsers-select">
+                    <option value="">Selecione um Navegador</option>
+                    <option value="chrome">Google Chrome</option>
+                    <option value="firefox">Firefox</option>
+                    <option value="edge">Microsoft Edge</option>
+                    <option value="safari">Safari</option>
+                    <option value="opera">Opera</option>
+                </select>
+            </div>
+        </div>
+        <br /><hr />
+        
+        <h2>Code, kbd e pre</h2>
+        <p>Com estas tags podemos realizar formatações no texto que facilitam a visualização da informação no HTML.</p>
+        <p><b>&lt;code&gt;</b> - Será exibido o conteúdo estilizado deixando a entender que é um fragmento de código alterando inclusive a fonte para monospace. </p>
+        <p><b>&lt;pre&gt;</b> - Representa o texto pré formatado que deve ser apresentado exatamente como escrito no arquivo HTML.</p>
+        <p><b>&lt;kbd&gt;</b> - Esta tag "keyboard" é utilizada para apresentar ao usuário que a informação é um comando no teclado. Esta tag diferencia a fonte escrita e permite aplicação de estilos CSS.</p>
+        <p>Veja abaixo a combinação destas três tags:</p>
+        <h5>Exemplo:</h5>
+        <pre>
+            <code>
+            &lt;P&gt;Para copiar este texto, pressione: &lt;kbd&gt;CTRL&lt;/kbd&gt;+&lt;kbd&gt;C&lt;/kbd&gt;.&lt;/P&gt;
+
+            <span>/*CSS do kbd*/</span>
+
+            kbd {
+                border: solid 1px ;
+            }
+            </code>
+        </pre>
+        <h5>Resultado:</h5>
+        <P>Para copiar este texto, pressione: <kbd>CTRL</kbd>+<kbd>C</kbd>.</P>
+        
+    
+    </main>
+
+    <hr />
+
+    <footer>
+        <p>Documento feito com base nos estudos do CURSO DE HTML <a class="link_sem_decoration" href="https://dio.me" target="_blank">DIO</a>.</p>
+        <p><a class="link_sem_decoration" href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">Informações e estudos deste documento foram consultadas em <cite>Mmdn web docs</cite>.</a></p>
+    </footer>
+    <br  />
+</body>
+</html>

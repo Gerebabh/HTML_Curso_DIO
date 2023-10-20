@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../_CSS/base.css" />
+    <title>Tags HTML5 - figure, figcaption, picture</title>
+</head>
+<body>
+    <header>
+        <h2>Tags estruturais - &lt;figure&gt;, &lt;figcaption&gt; &lt;picture&gt;</h2>
+    </header>
+    
+    <hr />
+    
+    <main>
+        <h3>&lt;figure&gt; e &lt;figcaption&gt;</h3>
+        <p>O elemento HTML &lt;figura&gt; representa conteúdo independente, potencialmente com uma legenda opcional, que é especificada usando o elemento &lt;figcaption&gt; elementos. A figura, sua legenda e seu conteúdo são referenciados como uma única unidade.</p>
+        <p>O elemento HTML &lt;figcaption&gt; representa uma legenda ou legenda que descreve o restante do conteúdo de seu elemento pai &lt;figura&gt;.</p>
+        <figure>
+            <img src="../img/gunfight.JPG" width="400" />
+            <figcaption>BXL-Problema no Loader</figcaption>
+        </figure>
+        <pre><code>
+            ...
+            &lt;figure&gt;
+                &lt;img src="../img/gunfight.JPG" width="400" /&gt;
+                &lt;figcaption>BXL-Problema no Loader&lt;/figcaption&gt;
+            &lt;/figure&gt;
+                ...
+        </code></pre>
+        
+        <hr />
+
+        <h3>&lt;picture&gt;</h3>
+        <p>O elemento HTML &lt;picture&gt; contém zero ou mais elementos &lt;source&gt; e um elemento &lt;img&gt; para oferecer versões alternativas de uma imagem para diferentes cenários de exibição/dispositivo. O navegador considerará cada elemento filho e escolherá a melhor correspondência entre eles. Se nenhuma correspondência for encontrada — ou se o navegador não oferecer suporte ao elemento — a URL do atributo src do elemento será selecionada. A imagem selecionada é então apresentada no espaço ocupado pelo elemento.&lt;source&gt;&lt;picture&gt;&lt;img&gt;&lt;img&gt;</p>
+        <picture>
+            <source srcset="../img/marcando_paralela_small.jpg" media="(max-width:700px)">
+            <img src="../img/marcando_paralela.jpg" />
+        </picture>
+        <pre><code>
+            &lt;picture&gt;
+                &lt;source srcset="../img/marcando_paralela_small.jpg" media="(max-width:700px)"&gt;
+                &lt;img src="../img/marcando_paralela.jpg" /&gt;
+            &lt;/picture&gt;
+        </code></pre>
+                
+    </main>
+
+    <hr />
+
+    <footer>
+        <p>Documento feito com base nos estudos do CURSO DE HTML <a class="link_sem_decoration" href="https://dio.me" target="_blank">DIO</a>.</p>
+        <p><a class="link_sem_decoration" href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">Informações e estudos deste documento foram consultadas em <cite>Mmdn web docs</cite>.</a></p>
+    </footer>
+    <br  />
+</body>
+</html>

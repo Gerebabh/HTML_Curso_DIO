@@ -121,6 +121,13 @@ pre {
 code > span {           /*Formata o <span> quando estiver em <code>*/
     color:red;
 }
+p > code {
+    background-color: #f1f1f1;
+    color: black;
+}
+canvas {
+    background: #eeeeee; 
+}
 /*
 pre > code  {           /*Formata o <code> quando estiver em <pre>.
     color: green

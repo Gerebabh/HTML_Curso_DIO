@@ -67,8 +67,108 @@
         <h5>Resultado:</h5>
         <P>Para copiar este texto, pressione: <kbd>CTRL</kbd>+<kbd>C</kbd>.</P>
         
-    
-    </main>
+        <hr/>
+
+        <h2>details e summary</h2>
+        <p>O elemento HTML cria um widget de divulgação no qual as informações ficam visíveis somente quando o widget é alternado para um estado "aberto". Um resumo ou rótulo deve ser fornecido usando o elemento &LT;details&gt; &LT;summary&gt;. Um widget de divulgação normalmente é apresentado na tela usando um pequeno triângulo que gira (ou gira) para indicar o status aberto/fechado, com um rótulo próximo ao triângulo. O conteúdo do &LT;summary&gt;elemento é usado como rótulo para o widget de divulgação.</p>
+        <h5>Código:</h5>
+        <pre><code>
+            &lt;details&gt;
+                &lt;summary&gt;Como troco a cor de fundo de um elemento no HTML?&lt;/summary&gt;
+                &lt;p&gt;Para executar esta ação utilize o comanando &lt;code&gt;background-color&lt;/code&gt; no CSS.&lt;/p&gt;
+            &lt;/details&gt;
+
+            <span>/*CSS do &lt;code&gt; em &lt;p&gt;*/</span>
+            
+            p > code {
+                background-color: #f1f1f1;
+                color: black;
+        </code></pre>
+
+        <h5>Resultado:</h5>
+        <details>
+            <summary>Como troco a cor de fundo de um elemento no HTML?</summary>
+            <p>Para executar esta ação utilize o comanando <code>background-color</code> no CSS.</p>
+        </details>
+
+        <hr />
+        
+        <h2>meter e progress</h2>
+
+        <p>O elemento &lt;meter&gt; representa um valor escalar dentro de um intervalo conhecido ou um valor fracionário. É comumente usado para exibir quantidades como a quantidade de combustível em um tanque ou o espaço disponível em um disco rígido.</p>
+        <h5>Código:</h5>
+        <pre><code>
+            &lt;meter min="0" max="100" value="30"&gt;&lt;/meter&gt;
+        </code></pre>
+        <h5>Resultado:</h5>
+        <span>Combustível</span>
+        <meter min="0" max="100" value="30"></meter>
+        <p>O elemento &lt;progress&gt; exibe um indicador que mostra o progresso da conclusão de uma tarefa, normalmente exibido como uma barra de progresso.</p>
+        <h5>Código:</h5>
+        <pre><code>
+        &lt;progress min="0" max="100" value="80"&gt;&lt;/progress&gt;
+        </code></pre>
+        <h5>Resultado:</h5>
+        <span>Estudo diário</span>
+        <progress min="0" max="100" value="80"></progress>
+        <hr />
+
+        <h2>Mark e JavaScript</h2>
+        <p>O elemento &lt;mark&gt; representa o texto marcado ou destacado para fins de referência ou notação devido à relevância da passagem marcada no contexto envolvente.</mark></p>
+        <mark>Este texto foi destacado</mark>
+        
+        <p>Aqui está um exemplo de como você pode combinar HTML e JavaScript. No campo abaixo, ele buscará letras ou palavras no texto e aplicará o destaque usando o elemento &lt;mark&gt;.</p>
+        <input type="text" id="busca"> <br />
+        <p id="descricao">Os nossos programas de formação são criados em conjunto com especialistas das empresas mais inovadoras do mundo, aplicando uma metodologia para que você domine as tecnologias utilizadas no mercado e também mergulhe nas novas e mais atuais tecnologias que impactarão o futuro dos negócios digitais.</p>
+
+        <script>
+            var searchField = document.getElementById('busca');
+            var descriptionObject = document.getElementById('descricao');
+            var textToSearch = descriptionObject.innerHTML;
+            function realizaBusca(busca){
+                const regex = new RegExp(`(${busca})(?!(.(?!<mark))*</mark)+`, 'ig');
+                const ocurrences = textToSearch.match(regex);
+                descriptionObject.innerHTML = textToSearch.replace(regex, `<mark>${busca}</mark>`)
+            }
+
+            searchField.addEventListener('keyup', (e) => realizaBusca(e.target.value));
+        </script>
+
+        <hr />
+
+        <h2>Canvas - Parte 1</h2>
+            <p>É somente uma pequena introdução ao CANVAS. Apenas apresentar algo que ele pode fazer. Sendo uma sujestão de curso o JavaScript e Canvas.</p>
+            <canvas id="myCanvas" width="200" height="100" style="border:1px solid white;"></canvas>
+            <script>
+                var c = document.getElementById("myCanvas");
+                var ctx = c.getContext("2d");
+                
+                // Create gradient
+                var grd = ctx.createLinearGradient(0, 0, 200, 0);
+                grd.addColorStop(0, "red");
+                grd.addColorStop(1, "white");
+                
+                // Fill with gradient
+                ctx.fillStyle = grd;
+                ctx.fillRect(10, 10, 150, 80);
+            </script>
+        <hr />
+        
+        <h2>Canvas - Parte 2</h2>
+        <p>No site <a class="link_sem_decoration" href="https://codepen.io/creative-code/pen/MWQvQVE" target="_blank">&gt;CodePen&lt;</a> existem vários exemplos que podem ser consultados, como o citado neste link.</p>
+        
+        <hr />
+
+        <h2>HTML 5 - Novos Atributos</h2>
+        <p>Algumas tag ainda pouco utilizadas no HTML</p>
+        <ul>
+            <li>&lt;autofocus&gt; - Ao carregar apresenta o campo do formulário destacado e selecionado.</li>
+            <li>&lt;placeholder&gt; - Preenche um input com uma sugestão.</li>
+            <li>&lt;required&gt; - Torna o preenchimento do campo obrigatório.</li>
+            <li>&lt;fieldset - disable&gt; - Desabilitar todos os campos dentro do fieldset.</li>
+            <li>&lt;textarea - minleght - maxlenght&gt; - Permite definir um número mínimo e máximo de caracteres de um campo (maxlenght exclusivo do textarea).</li> 
+        </ul>
+</main>
 
     <hr />
 

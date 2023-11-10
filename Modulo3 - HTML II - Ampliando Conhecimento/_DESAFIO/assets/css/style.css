@@ -42,3 +42,34 @@ h1, h2 {
 .hrtitulo {
     margin-top: 0px;
 }
+.responsive-img {
+    width: 100%;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    .main {
+      padding: 10px;
+    }
+    .hrtitulo {
+      margin: 10px 0;
+    }
+    .responsive-img {
+      max-width: 100%;
+      height: auto;
+    }
+    .anchors ul ul {
+      padding-left: 20px;
+    }
+  }
+/*Estilos para videos.*/
+.video-container {
+    margin-top: 20px; /* Adapte conforme necessário */
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
